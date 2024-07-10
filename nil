@@ -1,0 +1,14 @@
+_G.farm = true
+while _G.farm == true do
+local args = {
+    [1] = buffer(buffer: 0xf60deea496b6084b) --[[Generation Failure]],
+    [2] = {
+        [1] = {
+            [1] = "GainMuscle"
+        }
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Warp"):WaitForChild("Index"):WaitForChild("Event"):WaitForChild("Reliable"):FireServer(unpack(args))
+wait()
+end
